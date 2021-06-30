@@ -55,3 +55,12 @@ span {
     color: rgb(239, 239, 240);
     background-color: rgb(2, 84, 177);
 }
+
+@media screen and (max-width:390px) {
+    #profilepic img {
+        height: 150px;
+    }
+    #content {
+        height: 690px;
+    }
+}
