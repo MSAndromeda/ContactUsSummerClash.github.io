@@ -13,12 +13,49 @@
         <img src="img/IMG-20210630-WA0041.jpg" alt="">
     </div>
     <div id="content">
-        <h1>Mr. Mohit Srivastava</h1>
-        <h1>Head Of Department BCA Sacred Heart Degree College, Sitapur</h1>
-        <p style="background-color: rgb(147, 191, 248);">Sir is here to give guidance to anyone having any query related to the Competitions and Participations</p>
-        <h3> Sir's contact details are Contact no. <span>8004151308</span> ; Email id : <span>mohit2100@gmail.com</span> </h3>
-        <button><a href="mailto: mohit2100@gmail.com" target="_blank">Send Email</a></button>
+        <div>
+            <h1>
+                <span class="text-slider-items">
+                    Mr. Mohit Srivastava, is, Head Of Department BCA, Sacred Heart Degree College, Naipalapur,Sitapur...
+                </span>
+                <strong class="text-slider"></strong>
+            </h1>
+            <p style="background-color: rgb(147, 191, 248);">
+                <span class="text-slider-items1">
+                    Sir is here to help, Sir is here to give guidance to particip, Sir is here to give guidance to anyone having any problem, Sir is here to give guidance to anyone having any query related to the Competitions and Participants, Sir is here to give guidance to anyone having any query related to the Competitions and Participations
+                </span>
+                <strong class="text-slider1"></strong>
+            </p>
+            <h3> Sir's contact details are Contact no. <span class="highlight">8004151308</span> ; Email id : <span class="highlight">mohit2100@gmail.com</span> </h3>
+            <button><a href="mailto: mohit2100@gmail.com" target="_blank">Send Email</a></button>
+        </div>
     </div>
+    <script src="./typed js/typed.js-master/lib/typed.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        if ($(".text-slider").length == 1) {
+            var typed_strings = $(".text-slider-items").text();
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split(", "),
+                typeSpeed: 50,
+                loop: true,
+                smartBackspace: true,
+                backDelay: 1000,
+                backSpeed: 30,
+            });
+        }
+        if ($(".text-slider1").length == 1) {
+            var typed_strings = $(".text-slider-items1").text();
+            var typed = new Typed(".text-slider1", {
+                strings: typed_strings.split(", "),
+                typeSpeed: 50,
+                loop: false,
+                backDelay: 200,
+                backSpeed: 40,
+            });
+        }
+    </script>
 </body>
 
 </html>
